@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Cadastro de Usuários</title>
+    <link rel="stylesheet" href="Crud.css" />
+    </head>
+
+<body>
+    <div id="nav">
+        Usuários 
+    </div>
+    <section id="table">
+        <form method="post">
+            <div id="input-data">
+                <input id="name" class="input-text" placeholder="Nome" type="text" required />
+                <input id="email" class="input-text" placeholder="Email" type="email" required />
+                <input id="work" class="input-text" placeholder="Profissão" type="text" required />
+                <input class="input-btn" type="submit" value="Enviar" onclick="return addToTable()" />
+            </div>
+        </form>
+        <table id="myTable">
+            <tr id="0">
+                <th>ID</th>
+                <th>Nome</th>
+                <th>Email</th>
+                <th>Profissão</th>
+                <th>Ação</th>
+            </tr>
+        </table>
+    </section>
+    <script type="text/javascript" src="OneCrud.js"></script>
+</body>
+
+</html>
