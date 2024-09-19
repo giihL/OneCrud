@@ -13,12 +13,14 @@
     </div>
     <section id="table">
         <form method="post">
-            <div id="input-data">
+            <div id="input-data" class="Us">
                 <input id="name" class="input-text" placeholder="Nome" type="text" required />
                 <input id="email" class="input-text" placeholder="Email" type="email" required />
                 <input id="work" class="input-text" placeholder="Profissão" type="text" required />
-                <input class="input-btn" type="submit" value="Enviar" onclick="return addToTable()" />
             </div>
+            
+            <button class="input-btn" type="submit" onclick="saveUsu" >Enviar</button>
+        
         </form>
         <table id="myTable">
             <tr id="0">
@@ -29,6 +31,7 @@
                 <th>Ação</th>
             </tr>
         </table>
+        <tbody id="carTableBody"></tbody>
     </section>
     <script type="text/javascript" src="OneCrud.js"></script>
 </body>
